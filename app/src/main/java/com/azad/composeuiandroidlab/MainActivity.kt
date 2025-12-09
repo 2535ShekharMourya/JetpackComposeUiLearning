@@ -54,6 +54,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.azad.composeuiandroidlab.columncomposable.BasicColumnLayout
+import com.azad.composeuiandroidlab.columncomposable.CouterApp
+import com.azad.composeuiandroidlab.lazyrowcolumncomposable.BuildLazyColumn
+import com.azad.composeuiandroidlab.lazyrowcolumncomposable.BuildLazyRow
+import com.azad.composeuiandroidlab.lazyrowcolumncomposable.ListItems
+import com.azad.composeuiandroidlab.lazyrowcolumncomposable.MarvelLazyColumn
+import com.azad.composeuiandroidlab.lazyrowcolumncomposable.ScrollableColumn
 import com.azad.composeuiandroidlab.ui.theme.ComposeUiAndroidLabTheme
 import com.azad.composeuiandroidlab.usercontacts.UserContactsScreen
 
@@ -65,7 +71,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeUiAndroidLabTheme {
                 Surface(modifier = Modifier.fillMaxSize()) {
-
+                    MarvelLazyColumn()
                     // whole screen UI here
                 }
 

@@ -60,20 +60,7 @@ fun BasicColumnLayout() {
     }
 }
 
-@Preview(showBackground = true, widthDp = 300, heightDp = 500)
-@Composable
-fun ImageComposable(){
-    Image(painter = painterResource(id = R.drawable.user_img2), contentDescription = "Image",
 
-
-             modifier = Modifier.fillMaxSize()
-            .padding(2.dp)
-                .clip(CircleShape)
-            .border(2.dp, Color.Gray, CircleShape)
-        )
-    
-
-}
 
 //@Preview(showBackground = true, widthDp = 300, heightDp = 500)
 @Composable
