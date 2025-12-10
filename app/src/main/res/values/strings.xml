@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ComposeUiAndroidLab</string>
     <string name="title_activity_todo_app">TodoAppActivity</string>
+    <string name="title_activity_compose_navigation">ComposeNavigationActivity</string>
 </resources>

@@ -53,8 +53,15 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import com.azad.composeuiandroidlab.columncomposable.BasicColumnLayout
 import com.azad.composeuiandroidlab.columncomposable.CouterApp
+import com.azad.composeuiandroidlab.composenavigation.Routes
+import com.azad.composeuiandroidlab.composenavigation.screens.ScreenA
+import com.azad.composeuiandroidlab.composenavigation.screens.ScreenB
+import com.azad.composeuiandroidlab.composenavigation.screens.ScreenC
 import com.azad.composeuiandroidlab.lazyrowcolumncomposable.BuildLazyColumn
 import com.azad.composeuiandroidlab.lazyrowcolumncomposable.BuildLazyRow
 import com.azad.composeuiandroidlab.lazyrowcolumncomposable.ListItems
@@ -69,13 +76,17 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            ComposeUiAndroidLabTheme {
-                Surface(modifier = Modifier.fillMaxSize()) {
-                    MarvelLazyColumn()
-                    // whole screen UI here
-                }
 
-            }
+
+
+
+//            ComposeUiAndroidLabTheme {
+//                Surface(modifier = Modifier.fillMaxSize()) {
+//                    MarvelLazyColumn()
+//                    // whole screen UI here
+//                }
+//
+//            }
         }
     }
 }
