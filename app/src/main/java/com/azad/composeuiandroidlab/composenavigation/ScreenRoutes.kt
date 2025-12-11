@@ -1,6 +1,6 @@
 package com.azad.composeuiandroidlab.composenavigation
 
-object Routes {
+object ScreenRoutes {
     val screenA = "screenA"
     val screenB = "screenB"
     val screenC = "screenC"

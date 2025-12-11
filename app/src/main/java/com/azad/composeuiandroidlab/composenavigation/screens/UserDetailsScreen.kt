@@ -8,15 +8,22 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavController
+import com.azad.composeuiandroidlab.composenavigation.ScreenRoutes
 
 @Composable
-fun ScreenC(onclick: () -> Unit){
+fun UserDetailsScreen( userName: String?=null,age: Int?=null,userId: Long?=null,isPremium: Boolean?=null) {
     Column(modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text("Screen C")
-        Button(onClick = {onclick()}) { Text("Go to Screen A") }
+        Text("UserName is $userName")
+        Text("User Age is $age")
+        Text("User id is $userId")
+        Text("User isPremium $isPremium")
+
+
 
     }
+
 }

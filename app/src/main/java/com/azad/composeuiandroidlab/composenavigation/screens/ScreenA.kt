@@ -9,7 +9,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
-import com.azad.composeuiandroidlab.composenavigation.Routes
+import com.azad.composeuiandroidlab.composenavigation.ScreenRoutes
+import com.azad.composeuiandroidlab.composenavigation.screens.routes.ScreenBRoute
 
 @Composable
 fun ScreenA(navController: NavController) {
@@ -18,7 +19,10 @@ fun ScreenA(navController: NavController) {
         verticalArrangement = Arrangement.Center
     ) {
         Text("Screen A")
-        Button(onClick = {navController.navigate(Routes.screenB+"/AzadShekhar")}) { Text("Go to Screen B")}
+        Button(onClick = {navController.navigate(ScreenBRoute.passUserName("AzadShekhar"))}) { Text("Go to Screen B")}
+        Button(onClick = {navController.navigate(ScreenBRoute.passUserAge(24))}) { Text("Go to Screen B")}
+        Button(onClick = {navController.navigate(ScreenBRoute.passUserNameAndAge("azad", 24))}) { Text("Go to Screen B")}
+       // Button(onClick = {navController.navigate(ScreenRoutes.screenB+"/123")}) { Text("Go to Screen B")}
 
     }
 
